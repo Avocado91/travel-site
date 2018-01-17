@@ -600,6 +600,11 @@ a {
     color: #fff;
   }
 
+.page-section--testimonials {
+    background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+    background-size: cover;
+  }
+
 .headline {
   font-weight: 300;
   font-size: 1.9rem;
@@ -660,8 +665,16 @@ a {
     display: table;
   }
 
+.row--t-padding {
+    padding-top: 80px;
+  }
+
 .row--gutters {
     margin-right: -65px;
+  }
+
+.row--gutters-small {
+    margin-right: -45px;
   }
 
 .row--gutters-large {
@@ -670,6 +683,10 @@ a {
 
 .row--gutters > div {
     padding-right: 65px;
+  }
+
+.row--gutters > div {
+    padding-right: 45px;
   }
 
 .row--gutters-large > div {
@@ -708,6 +725,23 @@ a {
       width: 63%;
     }}
 
+/* Begin equal height rules */
+
+@media (min-width: 800px) {
+
+.row--equal-height-at-med {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+  }}
+
+.row--equal-height-at-med > div {
+      float: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
 .generic-content-container p {
     line-height: 1.65;
     margin: 0 0 1.8rem 0;
@@ -738,6 +772,10 @@ a {
 }
   }
 
+.section-title--blue {
+    color: #2f5572;
+  }
+
 .section-title strong {
     font-weight: 500;
   }
@@ -755,7 +793,9 @@ a {
       margin-right: 0.5rem;
       margin-left: 0;
       display: inline-block;
-      margin-bottom: 0
+      margin-bottom: 0;
+      position: relative;
+      top: 8px
   }
   }
 
@@ -799,4 +839,36 @@ a {
       font-size: 1.875rem;
       text-align: left
   }
+  }
+
+.testimonial {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0 1.813rem 1px 1.813rem;
+}
+
+.testimonial__photo {
+    border-radius: 80px;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto -80px auto;
+    position: relative;
+    top: -80px;
+    border: 6px solid rgba(255, 255, 255, 0.8);
+  }
+
+.testimonial__title {
+    color: #2f5572;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+.testimonial__subtitle {
+    color: #d59541;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.938rem;
+    margin: 0.25rem 0 1rem 0;
   }

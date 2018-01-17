@@ -7,6 +7,10 @@
     font-size: 3.75rem;
   }
 
+  &--blue {
+    color: $mainBlue;
+  }
+
   strong {
     font-weight: 500;
   }
@@ -22,6 +26,8 @@
       margin-left: 0;
       display: inline-block;
       margin-bottom: 0;
+      position: relative;
+      top: 8px;
     }
   }
 }
