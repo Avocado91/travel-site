@@ -40,7 +40,7 @@
 
       /* logo for dark header */
       .site-header--dark & {
-        transform: scale(0.564);
+        transform: scale(0.554);
       }
     }
   }
